@@ -1,0 +1,823 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8802727C2003BFDA00C85373 /* UIImageViewCached.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8802727B2003BFDA00C85373 /* UIImageViewCached.swift */; };
+		8810B53B200663A500411F08 /* Bernoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8810B53A200663A500411F08 /* Bernoice.swift */; };
+		8816379E2003B20100F18C74 /* BankAppDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8816379D2003B20100F18C74 /* BankAppDetailTableViewController.swift */; };
+		881637A02003B6D800F18C74 /* TitleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8816379F2003B6D800F18C74 /* TitleViewCell.swift */; };
+		88173FC92001E03E00951FBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88173FC82001E03E00951FBB /* AppDelegate.swift */; };
+		88173FCE2001E03E00951FBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88173FCC2001E03E00951FBB /* Main.storyboard */; };
+		88173FD12001E03E00951FBB /* kakaoBankHomework.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 88173FCF2001E03E00951FBB /* kakaoBankHomework.xcdatamodeld */; };
+		88173FD32001E03E00951FBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88173FD22001E03E00951FBB /* Assets.xcassets */; };
+		88173FD62001E03E00951FBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88173FD42001E03E00951FBB /* LaunchScreen.storyboard */; };
+		88173FE12001E03E00951FBB /* kakaoBankHomeworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88173FE02001E03E00951FBB /* kakaoBankHomeworkTests.swift */; };
+		88173FEC2001E03F00951FBB /* kakaoBankHomeworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88173FEB2001E03F00951FBB /* kakaoBankHomeworkUITests.swift */; };
+		88173FFE200200F700951FBB /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88173FFD200200F700951FBB /* UILabelExtension.swift */; };
+		88174000200202FC00951FBB /* BankListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88173FFF200202FC00951FBB /* BankListViewController.swift */; };
+		882BF52F2003DCA8000F2112 /* NewFeatureViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882BF52E2003DCA8000F2112 /* NewFeatureViewCell.swift */; };
+		882BF5312003ECBC000F2112 /* PreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882BF5302003ECBC000F2112 /* PreviewCell.swift */; };
+		882BF5332003EFD6000F2112 /* DescriptionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882BF5322003EFD6000F2112 /* DescriptionViewCell.swift */; };
+		882BF5352003FCB8000F2112 /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882BF5342003FCB8000F2112 /* ListViewCell.swift */; };
+		8EB9A5D37537247808E6543B /* Pods_kakaoBankHomeworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D00ADEF6C8993329E4EB6EB /* Pods_kakaoBankHomeworkTests.framework */; };
+		BA96283457862F521D349580 /* Pods_kakaoBankHomework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEC69B7E4B0084734B8E2F0 /* Pods_kakaoBankHomework.framework */; };
+		BB0EBBC8535A7D476F11A13C /* Pods_kakaoBankHomeworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E912CFD955A41892EEBBBB5 /* Pods_kakaoBankHomeworkUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88173FDD2001E03E00951FBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88173FBD2001E03E00951FBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88173FC42001E03E00951FBB;
+			remoteInfo = kakaoBankHomework;
+		};
+		88173FE82001E03F00951FBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88173FBD2001E03E00951FBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88173FC42001E03E00951FBB;
+			remoteInfo = kakaoBankHomework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12B25F9E681E41427BF5462D /* Pods-kakaoBankHomeworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kakaoBankHomeworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kakaoBankHomeworkTests/Pods-kakaoBankHomeworkTests.release.xcconfig"; sourceTree = "<group>"; };
+		23E43115914A2ED560E01900 /* Pods-kakaoBankHomework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kakaoBankHomework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kakaoBankHomework/Pods-kakaoBankHomework.debug.xcconfig"; sourceTree = "<group>"; };
+		395A5D8B85DFC1BD9A344EAD /* Pods-kakaoBankHomework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kakaoBankHomework.release.xcconfig"; path = "Pods/Target Support Files/Pods-kakaoBankHomework/Pods-kakaoBankHomework.release.xcconfig"; sourceTree = "<group>"; };
+		3D00ADEF6C8993329E4EB6EB /* Pods_kakaoBankHomeworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kakaoBankHomeworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		839313CCE7A2D2A8589C2368 /* Pods-kakaoBankHomeworkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kakaoBankHomeworkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kakaoBankHomeworkUITests/Pods-kakaoBankHomeworkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8802727B2003BFDA00C85373 /* UIImageViewCached.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewCached.swift; sourceTree = "<group>"; };
+		8810B53A200663A500411F08 /* Bernoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bernoice.swift; sourceTree = "<group>"; };
+		8816379D2003B20100F18C74 /* BankAppDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAppDetailTableViewController.swift; sourceTree = "<group>"; };
+		8816379F2003B6D800F18C74 /* TitleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewCell.swift; sourceTree = "<group>"; };
+		88173FC52001E03E00951FBB /* kakaoBankHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kakaoBankHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88173FC82001E03E00951FBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88173FCD2001E03E00951FBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88173FD02001E03E00951FBB /* kakaoBankHomework.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = kakaoBankHomework.xcdatamodel; sourceTree = "<group>"; };
+		88173FD22001E03E00951FBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88173FD52001E03E00951FBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88173FD72001E03E00951FBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88173FDC2001E03E00951FBB /* kakaoBankHomeworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kakaoBankHomeworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88173FE02001E03E00951FBB /* kakaoBankHomeworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kakaoBankHomeworkTests.swift; sourceTree = "<group>"; };
+		88173FE22001E03E00951FBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88173FE72001E03F00951FBB /* kakaoBankHomeworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kakaoBankHomeworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88173FEB2001E03F00951FBB /* kakaoBankHomeworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kakaoBankHomeworkUITests.swift; sourceTree = "<group>"; };
+		88173FED2001E03F00951FBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88173FFD200200F700951FBB /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		88173FFF200202FC00951FBB /* BankListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankListViewController.swift; sourceTree = "<group>"; };
+		881740022002034500951FBB /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		882BF52E2003DCA8000F2112 /* NewFeatureViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeatureViewCell.swift; sourceTree = "<group>"; };
+		882BF5302003ECBC000F2112 /* PreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewCell.swift; sourceTree = "<group>"; };
+		882BF5322003EFD6000F2112 /* DescriptionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewCell.swift; sourceTree = "<group>"; };
+		882BF5342003FCB8000F2112 /* ListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
+		8E87821BA0155724DFC91594 /* Pods-kakaoBankHomeworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kakaoBankHomeworkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kakaoBankHomeworkTests/Pods-kakaoBankHomeworkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8F3E1315A08F945D196CBD89 /* Pods-kakaoBankHomeworkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kakaoBankHomeworkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kakaoBankHomeworkUITests/Pods-kakaoBankHomeworkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9E912CFD955A41892EEBBBB5 /* Pods_kakaoBankHomeworkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kakaoBankHomeworkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBEC69B7E4B0084734B8E2F0 /* Pods_kakaoBankHomework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kakaoBankHomework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88173FC22001E03E00951FBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA96283457862F521D349580 /* Pods_kakaoBankHomework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88173FD92001E03E00951FBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB9A5D37537247808E6543B /* Pods_kakaoBankHomeworkTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88173FE42001E03F00951FBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0EBBC8535A7D476F11A13C /* Pods_kakaoBankHomeworkUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7205AD875D934B8A1D17E4DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				881740022002034500951FBB /* Alamofire.framework */,
+				CBEC69B7E4B0084734B8E2F0 /* Pods_kakaoBankHomework.framework */,
+				3D00ADEF6C8993329E4EB6EB /* Pods_kakaoBankHomeworkTests.framework */,
+				9E912CFD955A41892EEBBBB5 /* Pods_kakaoBankHomeworkUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88173FBC2001E03E00951FBB = {
+			isa = PBXGroup;
+			children = (
+				88173FC72001E03E00951FBB /* kakaoBankHomework */,
+				88173FDF2001E03E00951FBB /* kakaoBankHomeworkTests */,
+				88173FEA2001E03F00951FBB /* kakaoBankHomeworkUITests */,
+				88173FC62001E03E00951FBB /* Products */,
+				9400FF02523FA03D71D69095 /* Pods */,
+				7205AD875D934B8A1D17E4DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		88173FC62001E03E00951FBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88173FC52001E03E00951FBB /* kakaoBankHomework.app */,
+				88173FDC2001E03E00951FBB /* kakaoBankHomeworkTests.xctest */,
+				88173FE72001E03F00951FBB /* kakaoBankHomeworkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88173FC72001E03E00951FBB /* kakaoBankHomework */ = {
+			isa = PBXGroup;
+			children = (
+				88173FC82001E03E00951FBB /* AppDelegate.swift */,
+				88173FFF200202FC00951FBB /* BankListViewController.swift */,
+				882BF5342003FCB8000F2112 /* ListViewCell.swift */,
+				8816379D2003B20100F18C74 /* BankAppDetailTableViewController.swift */,
+				8816379F2003B6D800F18C74 /* TitleViewCell.swift */,
+				882BF52E2003DCA8000F2112 /* NewFeatureViewCell.swift */,
+				882BF5302003ECBC000F2112 /* PreviewCell.swift */,
+				882BF5322003EFD6000F2112 /* DescriptionViewCell.swift */,
+				88173FCC2001E03E00951FBB /* Main.storyboard */,
+				88173FD22001E03E00951FBB /* Assets.xcassets */,
+				88173FD42001E03E00951FBB /* LaunchScreen.storyboard */,
+				88173FD72001E03E00951FBB /* Info.plist */,
+				88173FCF2001E03E00951FBB /* kakaoBankHomework.xcdatamodeld */,
+				88173FFD200200F700951FBB /* UILabelExtension.swift */,
+				8802727B2003BFDA00C85373 /* UIImageViewCached.swift */,
+				8810B53A200663A500411F08 /* Bernoice.swift */,
+			);
+			path = kakaoBankHomework;
+			sourceTree = "<group>";
+		};
+		88173FDF2001E03E00951FBB /* kakaoBankHomeworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				88173FE02001E03E00951FBB /* kakaoBankHomeworkTests.swift */,
+				88173FE22001E03E00951FBB /* Info.plist */,
+			);
+			path = kakaoBankHomeworkTests;
+			sourceTree = "<group>";
+		};
+		88173FEA2001E03F00951FBB /* kakaoBankHomeworkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				88173FEB2001E03F00951FBB /* kakaoBankHomeworkUITests.swift */,
+				88173FED2001E03F00951FBB /* Info.plist */,
+			);
+			path = kakaoBankHomeworkUITests;
+			sourceTree = "<group>";
+		};
+		9400FF02523FA03D71D69095 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23E43115914A2ED560E01900 /* Pods-kakaoBankHomework.debug.xcconfig */,
+				395A5D8B85DFC1BD9A344EAD /* Pods-kakaoBankHomework.release.xcconfig */,
+				8E87821BA0155724DFC91594 /* Pods-kakaoBankHomeworkTests.debug.xcconfig */,
+				12B25F9E681E41427BF5462D /* Pods-kakaoBankHomeworkTests.release.xcconfig */,
+				839313CCE7A2D2A8589C2368 /* Pods-kakaoBankHomeworkUITests.debug.xcconfig */,
+				8F3E1315A08F945D196CBD89 /* Pods-kakaoBankHomeworkUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88173FC42001E03E00951FBB /* kakaoBankHomework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88173FF02001E03F00951FBB /* Build configuration list for PBXNativeTarget "kakaoBankHomework" */;
+			buildPhases = (
+				A0A84BB861B9CA972D3740A0 /* [CP] Check Pods Manifest.lock */,
+				88173FC12001E03E00951FBB /* Sources */,
+				88173FC22001E03E00951FBB /* Frameworks */,
+				88173FC32001E03E00951FBB /* Resources */,
+				88FF7038A21A65CBDB095C7F /* [CP] Embed Pods Frameworks */,
+				AAB37EA6F215B0986FFEAE66 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kakaoBankHomework;
+			productName = kakaoBankHomework;
+			productReference = 88173FC52001E03E00951FBB /* kakaoBankHomework.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88173FDB2001E03E00951FBB /* kakaoBankHomeworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88173FF32001E03F00951FBB /* Build configuration list for PBXNativeTarget "kakaoBankHomeworkTests" */;
+			buildPhases = (
+				6C9524E9F61832A75E04E088 /* [CP] Check Pods Manifest.lock */,
+				88173FD82001E03E00951FBB /* Sources */,
+				88173FD92001E03E00951FBB /* Frameworks */,
+				88173FDA2001E03E00951FBB /* Resources */,
+				C77D8351868E068B13902DC8 /* [CP] Embed Pods Frameworks */,
+				245B6E48A537FBF3E353DADB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88173FDE2001E03E00951FBB /* PBXTargetDependency */,
+			);
+			name = kakaoBankHomeworkTests;
+			productName = kakaoBankHomeworkTests;
+			productReference = 88173FDC2001E03E00951FBB /* kakaoBankHomeworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		88173FE62001E03F00951FBB /* kakaoBankHomeworkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88173FF62001E03F00951FBB /* Build configuration list for PBXNativeTarget "kakaoBankHomeworkUITests" */;
+			buildPhases = (
+				9FEA3773A26EA132C09F2CCA /* [CP] Check Pods Manifest.lock */,
+				88173FE32001E03F00951FBB /* Sources */,
+				88173FE42001E03F00951FBB /* Frameworks */,
+				88173FE52001E03F00951FBB /* Resources */,
+				3A6A6B56CC5950138384B3E5 /* [CP] Embed Pods Frameworks */,
+				234B19DB2F4DCAF60CE2911E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88173FE92001E03F00951FBB /* PBXTargetDependency */,
+			);
+			name = kakaoBankHomeworkUITests;
+			productName = kakaoBankHomeworkUITests;
+			productReference = 88173FE72001E03F00951FBB /* kakaoBankHomeworkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88173FBD2001E03E00951FBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = yoojonghyun;
+				TargetAttributes = {
+					88173FC42001E03E00951FBB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					88173FDB2001E03E00951FBB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 88173FC42001E03E00951FBB;
+					};
+					88173FE62001E03F00951FBB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 88173FC42001E03E00951FBB;
+					};
+				};
+			};
+			buildConfigurationList = 88173FC02001E03E00951FBB /* Build configuration list for PBXProject "kakaoBankHomework" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88173FBC2001E03E00951FBB;
+			productRefGroup = 88173FC62001E03E00951FBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88173FC42001E03E00951FBB /* kakaoBankHomework */,
+				88173FDB2001E03E00951FBB /* kakaoBankHomeworkTests */,
+				88173FE62001E03F00951FBB /* kakaoBankHomeworkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88173FC32001E03E00951FBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88173FD62001E03E00951FBB /* LaunchScreen.storyboard in Resources */,
+				88173FD32001E03E00951FBB /* Assets.xcassets in Resources */,
+				88173FCE2001E03E00951FBB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88173FDA2001E03E00951FBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88173FE52001E03F00951FBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		234B19DB2F4DCAF60CE2911E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kakaoBankHomeworkUITests/Pods-kakaoBankHomeworkUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		245B6E48A537FBF3E353DADB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kakaoBankHomeworkTests/Pods-kakaoBankHomeworkTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A6A6B56CC5950138384B3E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kakaoBankHomeworkUITests/Pods-kakaoBankHomeworkUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C9524E9F61832A75E04E088 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kakaoBankHomeworkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88FF7038A21A65CBDB095C7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-kakaoBankHomework/Pods-kakaoBankHomework-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kakaoBankHomework/Pods-kakaoBankHomework-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FEA3773A26EA132C09F2CCA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kakaoBankHomeworkUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0A84BB861B9CA972D3740A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kakaoBankHomework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAB37EA6F215B0986FFEAE66 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kakaoBankHomework/Pods-kakaoBankHomework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C77D8351868E068B13902DC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kakaoBankHomeworkTests/Pods-kakaoBankHomeworkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88173FC12001E03E00951FBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				882BF5352003FCB8000F2112 /* ListViewCell.swift in Sources */,
+				88173FD12001E03E00951FBB /* kakaoBankHomework.xcdatamodeld in Sources */,
+				88174000200202FC00951FBB /* BankListViewController.swift in Sources */,
+				881637A02003B6D800F18C74 /* TitleViewCell.swift in Sources */,
+				8810B53B200663A500411F08 /* Bernoice.swift in Sources */,
+				8816379E2003B20100F18C74 /* BankAppDetailTableViewController.swift in Sources */,
+				88173FFE200200F700951FBB /* UILabelExtension.swift in Sources */,
+				88173FC92001E03E00951FBB /* AppDelegate.swift in Sources */,
+				882BF5332003EFD6000F2112 /* DescriptionViewCell.swift in Sources */,
+				882BF5312003ECBC000F2112 /* PreviewCell.swift in Sources */,
+				8802727C2003BFDA00C85373 /* UIImageViewCached.swift in Sources */,
+				882BF52F2003DCA8000F2112 /* NewFeatureViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88173FD82001E03E00951FBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88173FE12001E03E00951FBB /* kakaoBankHomeworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88173FE32001E03F00951FBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88173FEC2001E03F00951FBB /* kakaoBankHomeworkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88173FDE2001E03E00951FBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88173FC42001E03E00951FBB /* kakaoBankHomework */;
+			targetProxy = 88173FDD2001E03E00951FBB /* PBXContainerItemProxy */;
+		};
+		88173FE92001E03F00951FBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88173FC42001E03E00951FBB /* kakaoBankHomework */;
+			targetProxy = 88173FE82001E03F00951FBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88173FCC2001E03E00951FBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88173FCD2001E03E00951FBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88173FD42001E03E00951FBB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88173FD52001E03E00951FBB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88173FEE2001E03F00951FBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88173FEF2001E03F00951FBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88173FF12001E03F00951FBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23E43115914A2ED560E01900 /* Pods-kakaoBankHomework.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4N458ZX245;
+				INFOPLIST_FILE = kakaoBankHomework/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.homework.jamboa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88173FF22001E03F00951FBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 395A5D8B85DFC1BD9A344EAD /* Pods-kakaoBankHomework.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4N458ZX245;
+				INFOPLIST_FILE = kakaoBankHomework/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.homework.jamboa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		88173FF42001E03F00951FBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E87821BA0155724DFC91594 /* Pods-kakaoBankHomeworkTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SNK5Z868Q8;
+				INFOPLIST_FILE = kakaoBankHomeworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.homework.jamboa.kakaoBankHomeworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kakaoBankHomework.app/kakaoBankHomework";
+			};
+			name = Debug;
+		};
+		88173FF52001E03F00951FBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12B25F9E681E41427BF5462D /* Pods-kakaoBankHomeworkTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SNK5Z868Q8;
+				INFOPLIST_FILE = kakaoBankHomeworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.homework.jamboa.kakaoBankHomeworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kakaoBankHomework.app/kakaoBankHomework";
+			};
+			name = Release;
+		};
+		88173FF72001E03F00951FBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 839313CCE7A2D2A8589C2368 /* Pods-kakaoBankHomeworkUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SNK5Z868Q8;
+				INFOPLIST_FILE = kakaoBankHomeworkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.homework.jamboa.kakaoBankHomeworkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kakaoBankHomework;
+			};
+			name = Debug;
+		};
+		88173FF82001E03F00951FBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F3E1315A08F945D196CBD89 /* Pods-kakaoBankHomeworkUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SNK5Z868Q8;
+				INFOPLIST_FILE = kakaoBankHomeworkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.homework.jamboa.kakaoBankHomeworkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kakaoBankHomework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88173FC02001E03E00951FBB /* Build configuration list for PBXProject "kakaoBankHomework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88173FEE2001E03F00951FBB /* Debug */,
+				88173FEF2001E03F00951FBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88173FF02001E03F00951FBB /* Build configuration list for PBXNativeTarget "kakaoBankHomework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88173FF12001E03F00951FBB /* Debug */,
+				88173FF22001E03F00951FBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88173FF32001E03F00951FBB /* Build configuration list for PBXNativeTarget "kakaoBankHomeworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88173FF42001E03F00951FBB /* Debug */,
+				88173FF52001E03F00951FBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88173FF62001E03F00951FBB /* Build configuration list for PBXNativeTarget "kakaoBankHomeworkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88173FF72001E03F00951FBB /* Debug */,
+				88173FF82001E03F00951FBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		88173FCF2001E03E00951FBB /* kakaoBankHomework.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				88173FD02001E03E00951FBB /* kakaoBankHomework.xcdatamodel */,
+			);
+			currentVersion = 88173FD02001E03E00951FBB /* kakaoBankHomework.xcdatamodel */;
+			path = kakaoBankHomework.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 88173FBD2001E03E00951FBB /* Project object */;
+}

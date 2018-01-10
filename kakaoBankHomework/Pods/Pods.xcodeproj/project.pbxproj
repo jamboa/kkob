@@ -1,0 +1,860 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		082B9B2770144DA4C4C4F41F5236A966 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		21E8A31C6D0FDD65199C8777CE0C7684 /* Pods-kakaoBankHomeworkTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A67F91627460E841707ECFD1160E5CEA /* Pods-kakaoBankHomeworkTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2349CF010F85349F397F3F0F9071E7CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		403B681374F98BE1EBA22851C7EA71CE /* Pods-kakaoBankHomeworkUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 673797DD2F27541D81ECEED8D33AD7FE /* Pods-kakaoBankHomeworkUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46B23CB6DED201181B15386102405497 /* Pods-kakaoBankHomework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A0FDEF0DF30FF0FA84A0ED686AD2D4 /* Pods-kakaoBankHomework-dummy.m */; };
+		5D8DC095B60758DF838B7C05DEE8BA8C /* Pods-kakaoBankHomeworkTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B738F5D21F507460DD17FD31D73A279B /* Pods-kakaoBankHomeworkTests-dummy.m */; };
+		6BFE15CAD4C98A7C51150BB2BDE017CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7ECC8243FF46B1AA48050C597F73CD10 /* Pods-kakaoBankHomework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33A62CE9734F098B31445DE3D406F09B /* Pods-kakaoBankHomework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		903F04F7FF722BE527B166957C89D422 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93F3DF0E858497D212298E40C04A722E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C7254E0C7692682F2772C84A2FF72F4A /* Pods-kakaoBankHomeworkUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B1D75EDB461A0BF84EB59524C711AC /* Pods-kakaoBankHomeworkUITests-dummy.m */; };
+		CB3C011B9F63E4AAF9CF52F4A107586B /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */; };
+		CBE7F5AD129B4A894F6351BC0CEC9122 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8F204624E7CF0DB27EC7FBAA5742EF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3576BBC809FE6F46174098D9733CBA46;
+			remoteInfo = SwiftyJSON;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A0FDEF0DF30FF0FA84A0ED686AD2D4 /* Pods-kakaoBankHomework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kakaoBankHomework-dummy.m"; sourceTree = "<group>"; };
+		05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		1028E59A80C13E444525DD0AA2FF76FB /* Pods-kakaoBankHomeworkUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-kakaoBankHomeworkUITests.modulemap"; sourceTree = "<group>"; };
+		12A86B2FF4CD0389735230B10AEB622A /* Pods-kakaoBankHomeworkTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kakaoBankHomeworkTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		12ABDC4848F017A1730BC23CC2E9E830 /* Pods_kakaoBankHomeworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_kakaoBankHomeworkTests.framework; path = "Pods-kakaoBankHomeworkTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		171ECD20A37C6477DD23C572609FFC25 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A8F37E7230AC39A03F709B04BD80D26 /* Pods-kakaoBankHomeworkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kakaoBankHomeworkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1AAA5FB58EA434925DB0E7432F41DB00 /* Pods-kakaoBankHomeworkUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kakaoBankHomeworkUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		26175965A5D3EA575D74D860E13E4DB1 /* Pods-kakaoBankHomework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kakaoBankHomework.release.xcconfig"; sourceTree = "<group>"; };
+		2657FF78593C6BCF195F1F5442150819 /* Pods_kakaoBankHomework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_kakaoBankHomework.framework; path = "Pods-kakaoBankHomework.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		301D6D1FEEE83605E0CC62EF71650B4C /* Pods-kakaoBankHomeworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kakaoBankHomeworkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		33A62CE9734F098B31445DE3D406F09B /* Pods-kakaoBankHomework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kakaoBankHomework-umbrella.h"; sourceTree = "<group>"; };
+		36B1D75EDB461A0BF84EB59524C711AC /* Pods-kakaoBankHomeworkUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kakaoBankHomeworkUITests-dummy.m"; sourceTree = "<group>"; };
+		37F0654852B7D17E66A8230F383F7757 /* Pods-kakaoBankHomework-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-kakaoBankHomework-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3B19A171BC2272DFC6C1D6C6E7546978 /* Pods-kakaoBankHomeworkUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kakaoBankHomeworkUITests-frameworks.sh"; sourceTree = "<group>"; };
+		4123113463366EF7DFDB22B400C8D462 /* Pods-kakaoBankHomeworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kakaoBankHomeworkTests.release.xcconfig"; sourceTree = "<group>"; };
+		4D1E1ED734AED606BE4489992C8A457C /* Pods-kakaoBankHomework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kakaoBankHomework.debug.xcconfig"; sourceTree = "<group>"; };
+		61D71ADD1D91E1D6B31957CB0DAB41DF /* Pods-kakaoBankHomeworkTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-kakaoBankHomeworkTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		673797DD2F27541D81ECEED8D33AD7FE /* Pods-kakaoBankHomeworkUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kakaoBankHomeworkUITests-umbrella.h"; sourceTree = "<group>"; };
+		6B678B40C55C2CA828AB9CA4FBE411BF /* Pods-kakaoBankHomeworkUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kakaoBankHomeworkUITests-resources.sh"; sourceTree = "<group>"; };
+		75A52C05869A8E435182893A464D089B /* Pods-kakaoBankHomework-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kakaoBankHomework-acknowledgements.plist"; sourceTree = "<group>"; };
+		77E4CCF37A7C6D4239777593994B28D1 /* Pods_kakaoBankHomeworkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_kakaoBankHomeworkUITests.framework; path = "Pods-kakaoBankHomeworkUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CFA0643C2A10937C7257B31C377F70A /* Pods-kakaoBankHomework-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kakaoBankHomework-resources.sh"; sourceTree = "<group>"; };
+		9354E007F84B1D939C834AC993DBA385 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		979879CD271EBFB8059D36ABDA38DE24 /* Pods-kakaoBankHomeworkUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-kakaoBankHomeworkUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		982D5CA0C0FA6D84D6CE49FFDFCCCD7C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A67F91627460E841707ECFD1160E5CEA /* Pods-kakaoBankHomeworkTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kakaoBankHomeworkTests-umbrella.h"; sourceTree = "<group>"; };
+		ADEDBE83743B52DF24006BDCA768EEA0 /* Pods-kakaoBankHomeworkTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kakaoBankHomeworkTests-frameworks.sh"; sourceTree = "<group>"; };
+		B01F218E27C34752FF78CBA20D0816F1 /* Pods-kakaoBankHomeworkTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kakaoBankHomeworkTests-resources.sh"; sourceTree = "<group>"; };
+		B738F5D21F507460DD17FD31D73A279B /* Pods-kakaoBankHomeworkTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kakaoBankHomeworkTests-dummy.m"; sourceTree = "<group>"; };
+		B90F4E9799018BE3F45BFB934D8A8D42 /* Pods-kakaoBankHomeworkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kakaoBankHomeworkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		BDCC008F794AA49B25DBD2C40F171CEF /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		D8C532D2B0F57FBC0DBB759877295F08 /* Pods-kakaoBankHomework-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kakaoBankHomework-frameworks.sh"; sourceTree = "<group>"; };
+		F446803A92351D5AEE2BBFDC897D4F18 /* Pods-kakaoBankHomework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-kakaoBankHomework.modulemap"; sourceTree = "<group>"; };
+		F57E7BA56FD24F730BA10F21472535D8 /* Pods-kakaoBankHomeworkTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-kakaoBankHomeworkTests.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39B0556EC344B30B2E54216624D768C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2349CF010F85349F397F3F0F9071E7CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FEA08EBB4C446281B1940F1FA53510B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				082B9B2770144DA4C4C4F41F5236A966 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4D0960CDB16B914088DCB860CC1019 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93F3DF0E858497D212298E40C04A722E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D765DE8EC5D4FDEBF9894268573D7CA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BFE15CAD4C98A7C51150BB2BDE017CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AE163374583294DEAD6AEE79278431F /* Pods-kakaoBankHomework */ = {
+			isa = PBXGroup;
+			children = (
+				982D5CA0C0FA6D84D6CE49FFDFCCCD7C /* Info.plist */,
+				F446803A92351D5AEE2BBFDC897D4F18 /* Pods-kakaoBankHomework.modulemap */,
+				37F0654852B7D17E66A8230F383F7757 /* Pods-kakaoBankHomework-acknowledgements.markdown */,
+				75A52C05869A8E435182893A464D089B /* Pods-kakaoBankHomework-acknowledgements.plist */,
+				00A0FDEF0DF30FF0FA84A0ED686AD2D4 /* Pods-kakaoBankHomework-dummy.m */,
+				D8C532D2B0F57FBC0DBB759877295F08 /* Pods-kakaoBankHomework-frameworks.sh */,
+				7CFA0643C2A10937C7257B31C377F70A /* Pods-kakaoBankHomework-resources.sh */,
+				33A62CE9734F098B31445DE3D406F09B /* Pods-kakaoBankHomework-umbrella.h */,
+				4D1E1ED734AED606BE4489992C8A457C /* Pods-kakaoBankHomework.debug.xcconfig */,
+				26175965A5D3EA575D74D860E13E4DB1 /* Pods-kakaoBankHomework.release.xcconfig */,
+			);
+			name = "Pods-kakaoBankHomework";
+			path = "Target Support Files/Pods-kakaoBankHomework";
+			sourceTree = "<group>";
+		};
+		2F830C244875FF1AB4B7EE72DD1A8642 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AE163374583294DEAD6AEE79278431F /* Pods-kakaoBankHomework */,
+				DABB79F06FB80EB09A654A9EDBDC680D /* Pods-kakaoBankHomeworkTests */,
+				7812701F12418EBDAA91241AF8428183 /* Pods-kakaoBankHomeworkUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		57ED496AB768B44D1CA0050BD4C67A1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2657FF78593C6BCF195F1F5442150819 /* Pods_kakaoBankHomework.framework */,
+				12ABDC4848F017A1730BC23CC2E9E830 /* Pods_kakaoBankHomeworkTests.framework */,
+				77E4CCF37A7C6D4239777593994B28D1 /* Pods_kakaoBankHomeworkUITests.framework */,
+				BDCC008F794AA49B25DBD2C40F171CEF /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */,
+				8EC39E1DC11846207722B71AAFE40F98 /* Support Files */,
+			);
+			name = SwiftyJSON;
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		7812701F12418EBDAA91241AF8428183 /* Pods-kakaoBankHomeworkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				171ECD20A37C6477DD23C572609FFC25 /* Info.plist */,
+				1028E59A80C13E444525DD0AA2FF76FB /* Pods-kakaoBankHomeworkUITests.modulemap */,
+				979879CD271EBFB8059D36ABDA38DE24 /* Pods-kakaoBankHomeworkUITests-acknowledgements.markdown */,
+				1AAA5FB58EA434925DB0E7432F41DB00 /* Pods-kakaoBankHomeworkUITests-acknowledgements.plist */,
+				36B1D75EDB461A0BF84EB59524C711AC /* Pods-kakaoBankHomeworkUITests-dummy.m */,
+				3B19A171BC2272DFC6C1D6C6E7546978 /* Pods-kakaoBankHomeworkUITests-frameworks.sh */,
+				6B678B40C55C2CA828AB9CA4FBE411BF /* Pods-kakaoBankHomeworkUITests-resources.sh */,
+				673797DD2F27541D81ECEED8D33AD7FE /* Pods-kakaoBankHomeworkUITests-umbrella.h */,
+				1A8F37E7230AC39A03F709B04BD80D26 /* Pods-kakaoBankHomeworkUITests.debug.xcconfig */,
+				B90F4E9799018BE3F45BFB934D8A8D42 /* Pods-kakaoBankHomeworkUITests.release.xcconfig */,
+			);
+			name = "Pods-kakaoBankHomeworkUITests";
+			path = "Target Support Files/Pods-kakaoBankHomeworkUITests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */,
+				57ED496AB768B44D1CA0050BD4C67A1E /* Products */,
+				2F830C244875FF1AB4B7EE72DD1A8642 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8EC39E1DC11846207722B71AAFE40F98 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */,
+				D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */,
+				2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */,
+				32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */,
+				BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */,
+				05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DABB79F06FB80EB09A654A9EDBDC680D /* Pods-kakaoBankHomeworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				9354E007F84B1D939C834AC993DBA385 /* Info.plist */,
+				F57E7BA56FD24F730BA10F21472535D8 /* Pods-kakaoBankHomeworkTests.modulemap */,
+				61D71ADD1D91E1D6B31957CB0DAB41DF /* Pods-kakaoBankHomeworkTests-acknowledgements.markdown */,
+				12A86B2FF4CD0389735230B10AEB622A /* Pods-kakaoBankHomeworkTests-acknowledgements.plist */,
+				B738F5D21F507460DD17FD31D73A279B /* Pods-kakaoBankHomeworkTests-dummy.m */,
+				ADEDBE83743B52DF24006BDCA768EEA0 /* Pods-kakaoBankHomeworkTests-frameworks.sh */,
+				B01F218E27C34752FF78CBA20D0816F1 /* Pods-kakaoBankHomeworkTests-resources.sh */,
+				A67F91627460E841707ECFD1160E5CEA /* Pods-kakaoBankHomeworkTests-umbrella.h */,
+				301D6D1FEEE83605E0CC62EF71650B4C /* Pods-kakaoBankHomeworkTests.debug.xcconfig */,
+				4123113463366EF7DFDB22B400C8D462 /* Pods-kakaoBankHomeworkTests.release.xcconfig */,
+			);
+			name = "Pods-kakaoBankHomeworkTests";
+			path = "Target Support Files/Pods-kakaoBankHomeworkTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1E4FABE0703B08C8574115D85F874DA2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21E8A31C6D0FDD65199C8777CE0C7684 /* Pods-kakaoBankHomeworkTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23B3CD66D0BB68D2549023A6B8B6C772 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				903F04F7FF722BE527B166957C89D422 /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BE5DB6714CC6232BABB9B965B62EB57 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				403B681374F98BE1EBA22851C7EA71CE /* Pods-kakaoBankHomeworkUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DED15F87D3989AA9D20EB942E6C356B1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ECC8243FF46B1AA48050C597F73CD10 /* Pods-kakaoBankHomework-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3576BBC809FE6F46174098D9733CBA46 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B00CC38BFD354898C511454AAA26D35E /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				DB0BB5B52D8697B84C3EBE37AE1EFBC8 /* Sources */,
+				39B0556EC344B30B2E54216624D768C1 /* Frameworks */,
+				23B3CD66D0BB68D2549023A6B8B6C772 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = BDCC008F794AA49B25DBD2C40F171CEF /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4061ED2EA9DF7B5F54857DF9031EFABF /* Pods-kakaoBankHomework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB20B5E706E1C8B0F912EBF7FEF1E7F1 /* Build configuration list for PBXNativeTarget "Pods-kakaoBankHomework" */;
+			buildPhases = (
+				78F5028A234A8FD9428EF21C7495F693 /* Sources */,
+				D765DE8EC5D4FDEBF9894268573D7CA4 /* Frameworks */,
+				DED15F87D3989AA9D20EB942E6C356B1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EC687850A2F89E469C3679BF4C3DE71 /* PBXTargetDependency */,
+			);
+			name = "Pods-kakaoBankHomework";
+			productName = "Pods-kakaoBankHomework";
+			productReference = 2657FF78593C6BCF195F1F5442150819 /* Pods_kakaoBankHomework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		99E8993AE5394DE52567CA8F6D637803 /* Pods-kakaoBankHomeworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9CD280E9866A205C04E369337AE3B12 /* Build configuration list for PBXNativeTarget "Pods-kakaoBankHomeworkTests" */;
+			buildPhases = (
+				C81F34F9958B1A98637F5E27F83D0ADD /* Sources */,
+				BB4D0960CDB16B914088DCB860CC1019 /* Frameworks */,
+				1E4FABE0703B08C8574115D85F874DA2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-kakaoBankHomeworkTests";
+			productName = "Pods-kakaoBankHomeworkTests";
+			productReference = 12ABDC4848F017A1730BC23CC2E9E830 /* Pods_kakaoBankHomeworkTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FC4D334FCC18BF053ADD7DA07D8FAF31 /* Pods-kakaoBankHomeworkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6F414CC9F790AD8800DD70CBAD7C2E2 /* Build configuration list for PBXNativeTarget "Pods-kakaoBankHomeworkUITests" */;
+			buildPhases = (
+				E906A51B570199C7A15BEFA1934C1F56 /* Sources */,
+				6FEA08EBB4C446281B1940F1FA53510B /* Frameworks */,
+				6BE5DB6714CC6232BABB9B965B62EB57 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-kakaoBankHomeworkUITests";
+			productName = "Pods-kakaoBankHomeworkUITests";
+			productReference = 77E4CCF37A7C6D4239777593994B28D1 /* Pods_kakaoBankHomeworkUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 57ED496AB768B44D1CA0050BD4C67A1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4061ED2EA9DF7B5F54857DF9031EFABF /* Pods-kakaoBankHomework */,
+				99E8993AE5394DE52567CA8F6D637803 /* Pods-kakaoBankHomeworkTests */,
+				FC4D334FCC18BF053ADD7DA07D8FAF31 /* Pods-kakaoBankHomeworkUITests */,
+				3576BBC809FE6F46174098D9733CBA46 /* SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78F5028A234A8FD9428EF21C7495F693 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B23CB6DED201181B15386102405497 /* Pods-kakaoBankHomework-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81F34F9958B1A98637F5E27F83D0ADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D8DC095B60758DF838B7C05DEE8BA8C /* Pods-kakaoBankHomeworkTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB0BB5B52D8697B84C3EBE37AE1EFBC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBE7F5AD129B4A894F6351BC0CEC9122 /* SwiftyJSON-dummy.m in Sources */,
+				CB3C011B9F63E4AAF9CF52F4A107586B /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E906A51B570199C7A15BEFA1934C1F56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7254E0C7692682F2772C84A2FF72F4A /* Pods-kakaoBankHomeworkUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2EC687850A2F89E469C3679BF4C3DE71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 3576BBC809FE6F46174098D9733CBA46 /* SwiftyJSON */;
+			targetProxy = F8F204624E7CF0DB27EC7FBAA5742EF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07F16D416ADF7BBDEE89D6738AA60FDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 301D6D1FEEE83605E0CC62EF71650B4C /* Pods-kakaoBankHomeworkTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-kakaoBankHomeworkTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-kakaoBankHomeworkTests/Pods-kakaoBankHomeworkTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_kakaoBankHomeworkTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2775674BA6CE2A80442DB2483263A5E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4123113463366EF7DFDB22B400C8D462 /* Pods-kakaoBankHomeworkTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-kakaoBankHomeworkTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-kakaoBankHomeworkTests/Pods-kakaoBankHomeworkTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_kakaoBankHomeworkTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2C992BA153C8AD9C07A112026FFFDF53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26175965A5D3EA575D74D860E13E4DB1 /* Pods-kakaoBankHomework.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-kakaoBankHomework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-kakaoBankHomework/Pods-kakaoBankHomework.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_kakaoBankHomework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4C757AF23B7FDABC9C1B3D62AFEA7603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B90F4E9799018BE3F45BFB934D8A8D42 /* Pods-kakaoBankHomeworkUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-kakaoBankHomeworkUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-kakaoBankHomeworkUITests/Pods-kakaoBankHomeworkUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_kakaoBankHomeworkUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9836AC81A82C5E4C9846D862ADF4B245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BE83D36DCF2BBAA24BB09D2FFC84546B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D1E1ED734AED606BE4489992C8A457C /* Pods-kakaoBankHomework.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-kakaoBankHomework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-kakaoBankHomework/Pods-kakaoBankHomework.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_kakaoBankHomework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F26CDA7DE2825C87378C7F0520902851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F4B816440B3AA510F8FD0D76F96DCD43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A8F37E7230AC39A03F709B04BD80D26 /* Pods-kakaoBankHomeworkUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-kakaoBankHomeworkUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-kakaoBankHomeworkUITests/Pods-kakaoBankHomeworkUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_kakaoBankHomeworkUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C5BC78A31CDE101068C530CAC7FA0F /* Debug */,
+				89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9CD280E9866A205C04E369337AE3B12 /* Build configuration list for PBXNativeTarget "Pods-kakaoBankHomeworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F16D416ADF7BBDEE89D6738AA60FDD /* Debug */,
+				2775674BA6CE2A80442DB2483263A5E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B00CC38BFD354898C511454AAA26D35E /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9836AC81A82C5E4C9846D862ADF4B245 /* Debug */,
+				F26CDA7DE2825C87378C7F0520902851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6F414CC9F790AD8800DD70CBAD7C2E2 /* Build configuration list for PBXNativeTarget "Pods-kakaoBankHomeworkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B816440B3AA510F8FD0D76F96DCD43 /* Debug */,
+				4C757AF23B7FDABC9C1B3D62AFEA7603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB20B5E706E1C8B0F912EBF7FEF1E7F1 /* Build configuration list for PBXNativeTarget "Pods-kakaoBankHomework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE83D36DCF2BBAA24BB09D2FFC84546B /* Debug */,
+				2C992BA153C8AD9C07A112026FFFDF53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
