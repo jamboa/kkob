@@ -12,10 +12,10 @@ class UIImageViewCached : UIImageView
     }
     
     func downloadImage(url:String) {
-        urlSessionDataTask = Bernoice.shared.getByRemote(url: url){ data in
+        urlSessionDataTask = Bernoice.shared.getByRemote(url: url){ [weak self]data in
             DispatchQueue.main.async() {
-                self.contentMode = UIViewContentMode.scaleAspectFill
-                self.image = UIImage(data: data)
+                self?.contentMode = UIViewContentMode.scaleAspectFill
+                self?.image = UIImage(data: data)
             }
         }
     }
