@@ -24,18 +24,15 @@ class BankAppDetailTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         let urlString =  "https://itunes.apple.com/lookup?id=\(self.idString)&country=kr"
-        
-        DispatchQueue.global().async {
+        let _ = Bernoice.shared.getByRemote(url: urlString,completion:{[weak self] (data) in
             
-            let _ = Bernoice.shared.getByRemote(url: urlString,completion:{[weak self] (data) in
-                
-                self?.appData = JSON(data)
-                DispatchQueue.main.async {
-                    self?.tableView.reloadData()
-                }
-                
-            })
-        }
+            self?.appData = JSON(data)
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+            
+        })
+
     }
 
     override func didReceiveMemoryWarning() {

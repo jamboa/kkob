@@ -70,21 +70,18 @@ class BankListViewController: UIViewController, UITableViewDelegate, UITableView
         
         let url = "https://itunes.apple.com/kr/rss/topfreeapplications/limit=200/genre=6015/json"
         
-        DispatchQueue.global().async {
+        let _ = Bernoice.shared.getByRemote(url: url,completion:{[weak self] (data) in
             
-            let _ = Bernoice.shared.getByRemote(url: url,completion:{[weak self] (data) in
-                
-                let json = JSON(data)
-                if let appArrays = (json["feed"]["entry"].array) {
-                    self?.banks = appArrays
-                }
-                
-                DispatchQueue.main.async {
-                    self?.bankAppsTable.reloadData()
-                }
-                
-            })
-        }
+            let json = JSON(data)
+            if let appArrays = (json["feed"]["entry"].array) {
+                self?.banks = appArrays
+            }
+            
+            DispatchQueue.main.async {
+                self?.bankAppsTable.reloadData()
+            }
+            
+        })
 
     }
 

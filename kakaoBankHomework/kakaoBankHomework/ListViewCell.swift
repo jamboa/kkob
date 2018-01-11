@@ -31,28 +31,23 @@ class ListViewCell: UITableViewCell {
     
         let urlString =  "https://itunes.apple.com/lookup?id=\(idString)&country=kr"
         
-        DispatchQueue.global().async {
+        let _ = Bernoice.shared.getByRemote(url: urlString,completion:{[weak self](data) in
             
-            let _ = Bernoice.shared.getByRemote(url: urlString,completion:{[weak self](data) in
-                
-                let appData = JSON(data)
-                let arrayResult = appData["results"].arrayValue
-                let data = arrayResult[0]
-                let screenshotUrls = data["screenshotUrls"].arrayValue.map { $0.stringValue}
-
-                let screenshots = [self?.screenShotImage,self?.screenShotImage2,self?.screenShotImage3]
-                
-                for (screenshot,screenshotUrl) in zip(screenshots,screenshotUrls) {
-                    screenshot?.applyRounded().downloadImage(url: screenshotUrl)
-                }
-                        
-
-
-            })
+            let appData = JSON(data)
+            let arrayResult = appData["results"].arrayValue
+            let data = arrayResult[0]
+            let screenshotUrls = data["screenshotUrls"].arrayValue.map { $0.stringValue}
             
-        }
-        
-        
+            let screenshots = [self?.screenShotImage,self?.screenShotImage2,self?.screenShotImage3]
+            
+            for (screenshot,screenshotUrl) in zip(screenshots,screenshotUrls) {
+                screenshot?.applyRounded().downloadImage(url: screenshotUrl)
+            }
+            
+            
+            
+        })
+            
         
     }
     
