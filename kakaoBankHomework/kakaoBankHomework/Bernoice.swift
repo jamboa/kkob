@@ -15,6 +15,7 @@ open class Bernoice {
     lazy var sessionWithCache : URLSession = {
         let config = URLSessionConfiguration.default
         let imageCache = URLCache(memoryCapacity: 250*1024*1024, diskCapacity: 250*1024*1024, diskPath: "imageCache")
+        
         config.urlCache = imageCache
         config.requestCachePolicy = .returnCacheDataElseLoad
         return URLSession(configuration: config)
