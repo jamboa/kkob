@@ -12,8 +12,19 @@ import SwiftyJSON
 
 open class Bernoice {
     
-    lazy var session : URLSession = {
+    lazy var sessionWithCache : URLSession = {
         let config = URLSessionConfiguration.default
+        let imageCache = URLCache(memoryCapacity: 250*1024*1024, diskCapacity: 250*1024*1024, diskPath: "imageCache")
+        config.urlCache = imageCache
+        config.requestCachePolicy = .returnCacheDataElseLoad
+        return URLSession(configuration: config)
+    }()
+    
+    
+    lazy var sessionWithoutCache : URLSession = {
+        let config = URLSessionConfiguration.default
+        let cache = URLCache(memoryCapacity: 250*1024*1024, diskCapacity: 250*1024*1024, diskPath: "dataCache")
+        config.urlCache = cache
         config.requestCachePolicy = .useProtocolCachePolicy
         return URLSession(configuration: config)
     }()
@@ -21,25 +32,27 @@ open class Bernoice {
     static let shared = Bernoice()
     
     private init() {
-        
     }
     
-    func getByRemote(url: String, completion :@escaping (Data) -> Void ) -> URLSessionDataTask? { 
+    func getByRemote(url: String, cached : Bool, completion :@escaping (Data) -> Void ) -> URLSessionDataTask? { 
         let url = URL(string: url)!
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
-
+        
+        let cacheFlag = true
+        let session = cacheFlag ? sessionWithCache : sessionWithoutCache
+        
         let task : URLSessionDataTask =  session.dataTask(with: request , completionHandler: { (data, response, error) in
             
             guard error == nil else {
                 print("network error : \(error!)")
                 return
             }
-
+            
             if let dataUnwrapped = data {
                 completion(dataUnwrapped)
             }
-
+            
         })
         task.resume()
         return task

@@ -70,7 +70,7 @@ class BankListViewController: UIViewController, UITableViewDelegate, UITableView
         
         let url = "https://itunes.apple.com/kr/rss/topfreeapplications/limit=200/genre=6015/json"
         
-        let _ = Bernoice.shared.getByRemote(url: url,completion:{[weak self] (data) in
+        let _ = Bernoice.shared.getByRemote(url: url, cached: false ,completion:{[weak self] (data) in
             
             let json = JSON(data)
             if let appArrays = (json["feed"]["entry"].array) {

@@ -31,7 +31,7 @@ class ListViewCell: UITableViewCell {
     
         let urlString =  "https://itunes.apple.com/lookup?id=\(idString)&country=kr"
         
-        let _ = Bernoice.shared.getByRemote(url: urlString,completion:{[weak self](data) in
+        let _ = Bernoice.shared.getByRemote(url: urlString, cached: false ,completion:{[weak self](data) in
             
             let appData = JSON(data)
             let arrayResult = appData["results"].arrayValue
