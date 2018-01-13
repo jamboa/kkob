@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -35,14 +35,14 @@
 /* Begin PBXFileReference section */
 		00A0FDEF0DF30FF0FA84A0ED686AD2D4 /* Pods-kakaoBankHomework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kakaoBankHomework-dummy.m"; sourceTree = "<group>"; };
 		05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		1028E59A80C13E444525DD0AA2FF76FB /* Pods-kakaoBankHomeworkUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-kakaoBankHomeworkUITests.modulemap"; sourceTree = "<group>"; };
+		1028E59A80C13E444525DD0AA2FF76FB /* Pods-kakaoBankHomeworkUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-kakaoBankHomeworkUITests.modulemap"; sourceTree = "<group>"; };
 		12A86B2FF4CD0389735230B10AEB622A /* Pods-kakaoBankHomeworkTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kakaoBankHomeworkTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		12ABDC4848F017A1730BC23CC2E9E830 /* Pods_kakaoBankHomeworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_kakaoBankHomeworkTests.framework; path = "Pods-kakaoBankHomeworkTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12ABDC4848F017A1730BC23CC2E9E830 /* Pods_kakaoBankHomeworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kakaoBankHomeworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		171ECD20A37C6477DD23C572609FFC25 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A8F37E7230AC39A03F709B04BD80D26 /* Pods-kakaoBankHomeworkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kakaoBankHomeworkUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1AAA5FB58EA434925DB0E7432F41DB00 /* Pods-kakaoBankHomeworkUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kakaoBankHomeworkUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		26175965A5D3EA575D74D860E13E4DB1 /* Pods-kakaoBankHomework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kakaoBankHomework.release.xcconfig"; sourceTree = "<group>"; };
-		2657FF78593C6BCF195F1F5442150819 /* Pods_kakaoBankHomework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_kakaoBankHomework.framework; path = "Pods-kakaoBankHomework.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2657FF78593C6BCF195F1F5442150819 /* Pods_kakaoBankHomework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kakaoBankHomework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
 		301D6D1FEEE83605E0CC62EF71650B4C /* Pods-kakaoBankHomeworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kakaoBankHomeworkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
@@ -57,10 +57,10 @@
 		673797DD2F27541D81ECEED8D33AD7FE /* Pods-kakaoBankHomeworkUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kakaoBankHomeworkUITests-umbrella.h"; sourceTree = "<group>"; };
 		6B678B40C55C2CA828AB9CA4FBE411BF /* Pods-kakaoBankHomeworkUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kakaoBankHomeworkUITests-resources.sh"; sourceTree = "<group>"; };
 		75A52C05869A8E435182893A464D089B /* Pods-kakaoBankHomework-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kakaoBankHomework-acknowledgements.plist"; sourceTree = "<group>"; };
-		77E4CCF37A7C6D4239777593994B28D1 /* Pods_kakaoBankHomeworkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_kakaoBankHomeworkUITests.framework; path = "Pods-kakaoBankHomeworkUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77E4CCF37A7C6D4239777593994B28D1 /* Pods_kakaoBankHomeworkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kakaoBankHomeworkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CFA0643C2A10937C7257B31C377F70A /* Pods-kakaoBankHomework-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kakaoBankHomework-resources.sh"; sourceTree = "<group>"; };
 		9354E007F84B1D939C834AC993DBA385 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		979879CD271EBFB8059D36ABDA38DE24 /* Pods-kakaoBankHomeworkUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-kakaoBankHomeworkUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		982D5CA0C0FA6D84D6CE49FFDFCCCD7C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A67F91627460E841707ECFD1160E5CEA /* Pods-kakaoBankHomeworkTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kakaoBankHomeworkTests-umbrella.h"; sourceTree = "<group>"; };
@@ -69,13 +69,13 @@
 		B738F5D21F507460DD17FD31D73A279B /* Pods-kakaoBankHomeworkTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kakaoBankHomeworkTests-dummy.m"; sourceTree = "<group>"; };
 		B90F4E9799018BE3F45BFB934D8A8D42 /* Pods-kakaoBankHomeworkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kakaoBankHomeworkUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		BDCC008F794AA49B25DBD2C40F171CEF /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDCC008F794AA49B25DBD2C40F171CEF /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		D8C532D2B0F57FBC0DBB759877295F08 /* Pods-kakaoBankHomework-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kakaoBankHomework-frameworks.sh"; sourceTree = "<group>"; };
-		F446803A92351D5AEE2BBFDC897D4F18 /* Pods-kakaoBankHomework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-kakaoBankHomework.modulemap"; sourceTree = "<group>"; };
-		F57E7BA56FD24F730BA10F21472535D8 /* Pods-kakaoBankHomeworkTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-kakaoBankHomeworkTests.modulemap"; sourceTree = "<group>"; };
+		F446803A92351D5AEE2BBFDC897D4F18 /* Pods-kakaoBankHomework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-kakaoBankHomework.modulemap"; sourceTree = "<group>"; };
+		F57E7BA56FD24F730BA10F21472535D8 /* Pods-kakaoBankHomeworkTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-kakaoBankHomeworkTests.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +159,6 @@
 				BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */,
 				8EC39E1DC11846207722B71AAFE40F98 /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -362,7 +361,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0920;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -673,6 +672,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;

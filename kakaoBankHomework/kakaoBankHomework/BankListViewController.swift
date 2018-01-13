@@ -16,7 +16,6 @@ class BankListViewController: UIViewController, UITableViewDelegate, UITableView
     
     
     let bankListViewModel = BankListViewModel()
-    var numberOfList = 30
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return bankListViewModel.numberOfBank()
@@ -32,9 +31,8 @@ class BankListViewController: UIViewController, UITableViewDelegate, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "listViewCell", for: indexPath) as! ListViewCell
         cell.updateInfo(bankInfo : bankListViewModel.getBankInfo(index: indexPath.row))
         
-        if indexPath.row > Int((Double(numberOfList) * 0.8)) {
-            numberOfList+=30
-            bankListViewModel.getList(number : numberOfList) {[weak self] in
+        if indexPath.row > Int((Double(bankListViewModel.numberOfBank()) * 0.8)) {
+            bankListViewModel.getList(from : bankListViewModel.numberOfBank(),count : 30) {[weak self] in
                 self?.bankAppsTable.reloadData()
             }
             
@@ -70,7 +68,7 @@ class BankListViewController: UIViewController, UITableViewDelegate, UITableView
         bankAppsTable.dataSource = self
         bankAppsTable.delegate = self
         
-        bankListViewModel.getList(number: numberOfList) {[weak self] in
+        bankListViewModel.getList(from : 0, count : 30) {[weak self] in
             self?.bankAppsTable.reloadData()
         }
 

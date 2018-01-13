@@ -50,21 +50,20 @@ struct BankSimpleInfo {
 class BankListViewModel {
 
     var banks : NSMutableArray = NSMutableArray()
-    var numberOfList = 30
     
     func numberOfBank() -> Int {
         return banks.count
     }
     
     
-    func getList(number : Int, completion:@escaping () -> Void) {
-        let url = "https://itunes.apple.com/kr/rss/topfreeapplications/limit=\(number)/genre=6015/json"
+    func getList(from : Int, count: Int, completion:@escaping () -> Void) {
+        let url = "https://itunes.apple.com/kr/rss/topfreeapplications/limit=\(from+count)/genre=6015/json"
         
         let _ = Bernoice.shared.getByRemote(url: url, cached: false ,completion:{[weak self] (data) in
             let json = JSON(data)
             
-            if let appArrays = (json["feed"]["entry"].array) , let this = self {
-                let array = appArrays[(this.banks.count)..<(number)]
+            if let appArrays = (json["feed"]["entry"].array) {
+                let array = appArrays[from..<count+from]
                 self?.banks.addObjects(from: Array(array))
             }
             
