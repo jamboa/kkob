@@ -26,4 +26,9 @@ class PreviewCell: UITableViewCell {
         }
         
     }
+    
+    func updateInfo(bankPreviewInfo : BankPreviewInfo) {
+        self.updateInfo(screenshotUrls: bankPreviewInfo.screenShotUrls)
+    }
+
 }

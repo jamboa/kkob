@@ -25,6 +25,8 @@
 		882BF5332003EFD6000F2112 /* DescriptionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882BF5322003EFD6000F2112 /* DescriptionViewCell.swift */; };
 		882BF5352003FCB8000F2112 /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882BF5342003FCB8000F2112 /* ListViewCell.swift */; };
 		88D93CC7200A4B1900113027 /* BankListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D93CC6200A4B1900113027 /* BankListModel.swift */; };
+		88D93CC9200A50ED00113027 /* BankListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D93CC8200A50ED00113027 /* BankListViewModel.swift */; };
+		88D93CCB200A578900113027 /* BankDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D93CCA200A578900113027 /* BankDetailViewModel.swift */; };
 		8EB9A5D37537247808E6543B /* Pods_kakaoBankHomeworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D00ADEF6C8993329E4EB6EB /* Pods_kakaoBankHomeworkTests.framework */; };
 		BA96283457862F521D349580 /* Pods_kakaoBankHomework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEC69B7E4B0084734B8E2F0 /* Pods_kakaoBankHomework.framework */; };
 		BB0EBBC8535A7D476F11A13C /* Pods_kakaoBankHomeworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E912CFD955A41892EEBBBB5 /* Pods_kakaoBankHomeworkUITests.framework */; };
@@ -78,6 +80,8 @@
 		882BF5322003EFD6000F2112 /* DescriptionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewCell.swift; sourceTree = "<group>"; };
 		882BF5342003FCB8000F2112 /* ListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
 		88D93CC6200A4B1900113027 /* BankListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankListModel.swift; sourceTree = "<group>"; };
+		88D93CC8200A50ED00113027 /* BankListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankListViewModel.swift; sourceTree = "<group>"; };
+		88D93CCA200A578900113027 /* BankDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankDetailViewModel.swift; sourceTree = "<group>"; };
 		8E87821BA0155724DFC91594 /* Pods-kakaoBankHomeworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kakaoBankHomeworkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kakaoBankHomeworkTests/Pods-kakaoBankHomeworkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8F3E1315A08F945D196CBD89 /* Pods-kakaoBankHomeworkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kakaoBankHomeworkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kakaoBankHomeworkUITests/Pods-kakaoBankHomeworkUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9E912CFD955A41892EEBBBB5 /* Pods_kakaoBankHomeworkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kakaoBankHomeworkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +169,8 @@
 				8802727B2003BFDA00C85373 /* UIImageViewCached.swift */,
 				8810B53A200663A500411F08 /* Bernoice.swift */,
 				88D93CC6200A4B1900113027 /* BankListModel.swift */,
+				88D93CC8200A50ED00113027 /* BankListViewModel.swift */,
+				88D93CCA200A578900113027 /* BankDetailViewModel.swift */,
 			);
 			path = kakaoBankHomework;
 			sourceTree = "<group>";
@@ -494,6 +500,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				882BF5352003FCB8000F2112 /* ListViewCell.swift in Sources */,
+				88D93CCB200A578900113027 /* BankDetailViewModel.swift in Sources */,
 				88D93CC7200A4B1900113027 /* BankListModel.swift in Sources */,
 				88173FD12001E03E00951FBB /* kakaoBankHomework.xcdatamodeld in Sources */,
 				88174000200202FC00951FBB /* BankListViewController.swift in Sources */,
@@ -505,6 +512,7 @@
 				882BF5332003EFD6000F2112 /* DescriptionViewCell.swift in Sources */,
 				882BF5312003ECBC000F2112 /* PreviewCell.swift in Sources */,
 				8802727C2003BFDA00C85373 /* UIImageViewCached.swift in Sources */,
+				88D93CC9200A50ED00113027 /* BankListViewModel.swift in Sources */,
 				882BF52F2003DCA8000F2112 /* NewFeatureViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -25,30 +25,23 @@ class ListViewCell: UITableViewCell {
                     idString : String) {
         
 
-        let _ = iconImage.applyRounded().downloadImage(url: iconImageUrl)
-        titleLabel.text = title
-        subTitleLabel.text = subTitle
+
+    }
     
-        let urlString =  "https://itunes.apple.com/lookup?id=\(idString)&country=kr"
+    func updateInfo(bankInfo : BankSimpleInfo) {
         
-        let _ = Bernoice.shared.getByRemote(url: urlString, cached: false ,completion:{[weak self](data) in
-            
-            let appData = JSON(data)
-            let arrayResult = appData["results"].arrayValue
-            let data = arrayResult[0]
-            let screenshotUrls = data["screenshotUrls"].arrayValue.map { $0.stringValue}
-            
+        
+        let _ = iconImage.applyRounded().downloadImage(url: bankInfo.iconImageUrl)
+        titleLabel.text = bankInfo.title
+        subTitleLabel.text = bankInfo.subTitle
+        
+        bankInfo.updateScreenShots {[weak self](screenshotUrls ) in
             let screenshots = [self?.screenShotImage,self?.screenShotImage2,self?.screenShotImage3]
             
             for (screenshot,screenshotUrl) in zip(screenshots,screenshotUrls) {
                 screenshot?.applyRounded().downloadImage(url: screenshotUrl)
             }
-            
-            
-            
-        })
-            
-        
+        }
     }
     
     func cancelUpdating() {

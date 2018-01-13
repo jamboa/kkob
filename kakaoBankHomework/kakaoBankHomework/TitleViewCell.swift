@@ -43,6 +43,24 @@ class TitleViewCell: UITableViewCell {
         
     }
     
+    
+    func updateInfo(bankTitleInfo : BankTitleInfo) {
+        self.updateInfo(titleIamgeUrl: bankTitleInfo.titleIamgeUrl,
+                   trackName: bankTitleInfo.trackName,
+                   trackContentRating: bankTitleInfo.trackContentRating,
+                   contentAdvisoryRating: bankTitleInfo.contentAdvisoryRating,
+                   averageUserCurrentRating: bankTitleInfo.averageUserCurrentRating,
+                   artistName: bankTitleInfo.artistName,
+                   genres: bankTitleInfo.genres)
+        
+    }
+    
+    
+    
+    
+    
+    
+    
     func cancelTask() {
         if let task = urlSessionDataTask {
             task.cancel()

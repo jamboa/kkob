@@ -12,7 +12,12 @@ class DescriptionViewCell: UITableViewCell {
     @IBOutlet weak var desciptionLabel: UILabel!
     
     func updateInfo(description : String) {
-    self.desciptionLabel.setStringWithLineSpacing(string: description, lineSpace: 12)
+        self.desciptionLabel.setStringWithLineSpacing(string: description, lineSpace: 12)
     }
+    
+    func updateInfo(bankDescriptionInfo : BankDescriptionInfo) {
+        self.updateInfo(description: bankDescriptionInfo.description)
+    }
+    
     
 }

@@ -13,18 +13,14 @@ class BankListViewController: UIViewController, UITableViewDelegate, UITableView
     
     
     @IBOutlet weak var bankAppsTable: UITableView!
-    var banks : NSMutableArray = NSMutableArray()
     
+    
+    let bankListViewModel = BankListViewModel()
     var numberOfList = 30
     
-    
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return banks.count
+        return bankListViewModel.numberOfBank()
     }
-    
-    
-    
     
     func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         let cell = tableView.dequeueReusableCell(withIdentifier: "listViewCell", for: indexPath) as! ListViewCell
@@ -34,41 +30,18 @@ class BankListViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "listViewCell", for: indexPath) as! ListViewCell
-        let data = banks[indexPath.row] as! JSON
-        let iconArray = data["im:image"].arrayValue
-        let iconImage = iconArray[2]["label"].stringValue
-        cell.updateInfo(iconImageUrl: iconImage,
-                        title: data["title"]["label"].stringValue,
-                        subTitle: data["rights"]["label"].stringValue,
-                        idString : data["id"]["attributes"]["im:id"].stringValue)
+        cell.updateInfo(bankInfo : bankListViewModel.getBankInfo(index: indexPath.row))
         
         if indexPath.row > Int((Double(numberOfList) * 0.8)) {
             numberOfList+=30
-            self.getList(number : numberOfList)
-            
-        }
-        return cell
-    }
-    
-    
-    func getList(number : Int) {
-        
-        let url = "https://itunes.apple.com/kr/rss/topfreeapplications/limit=\(number)/genre=6015/json"
-        
-        let _ = Bernoice.shared.getByRemote(url: url, cached: false ,completion:{[weak self] (data) in
-            let json = JSON(data)
-
-            if let appArrays = (json["feed"]["entry"].array) , let this = self {
-                let array = appArrays[(this.banks.count)..<(number)]
-                self?.banks.addObjects(from: Array(array))
-            }
-            
-            DispatchQueue.main.async {
+            bankListViewModel.getList(number : numberOfList) {[weak self] in
                 self?.bankAppsTable.reloadData()
             }
-        })
+            
+        }
+        
+        return cell
     }
-    
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -76,15 +49,15 @@ class BankListViewController: UIViewController, UITableViewDelegate, UITableView
         if let viewController = segue.destination as? BankAppDetailTableViewController {
             if let urlString = sender as? String {
                 viewController.idString = urlString
-//                print("urlString : \(urlString)")
             }
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let data = banks[indexPath.row]  as! JSON
-//        print("data : \(data)")
+        guard let data = bankListViewModel.getBankData(index: indexPath.row) else {
+            return
+        }
         performSegue(withIdentifier: "toBankAppDetail", sender: data["id"]["attributes"]["im:id"].stringValue)
     }
     
@@ -97,7 +70,9 @@ class BankListViewController: UIViewController, UITableViewDelegate, UITableView
         bankAppsTable.dataSource = self
         bankAppsTable.delegate = self
         
-        self.getList(number: numberOfList)
+        bankListViewModel.getList(number: numberOfList) {[weak self] in
+            self?.bankAppsTable.reloadData()
+        }
 
     }
 

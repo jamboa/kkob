@@ -14,28 +14,14 @@ class NewFeatureViewCell: UITableViewCell {
     @IBOutlet weak var latestUpdate: UILabel!
     @IBOutlet weak var releaseNotes: UILabel!
     @IBOutlet weak var releaseNotesHeight: NSLayoutConstraint!
-    
-    func updateInfo(version : String,
-                    releaseDate : String,
-                    releaseNote: String) {
-        
-        self.versionLabel.text = version
-        self.latestUpdate.text = dateToDate(date: releaseDate)
-//        self.releaseNotes.text = releaseNote
-        
-        self.releaseNotes.setStringWithLineSpacing(string: releaseNote, lineSpace: 12)
 
-    }
     
-    
-    func dateToDate(date : String) -> String {
-        let DateFormatterInput = DateFormatter()
-        DateFormatterInput.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-        let dateDate = DateFormatterInput.date(from: date)
-        let DateFormatterOutput = DateFormatter()
-        DateFormatterOutput.dateFormat = "yyyy-MM-dd"
-        let dateString = DateFormatterOutput.string(from: dateDate!)
+    func updateInfo(bankNewFeatureInfo : BankNewFeatureInfo) {
         
-        return dateString
+        self.versionLabel.text = bankNewFeatureInfo.version
+        self.latestUpdate.text = bankNewFeatureInfo.releaseDate
+        self.releaseNotes.setStringWithLineSpacing(string: bankNewFeatureInfo.releaseNote, lineSpace: 12)
+        
     }
+
 }
