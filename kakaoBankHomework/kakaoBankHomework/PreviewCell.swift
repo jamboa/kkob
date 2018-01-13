@@ -17,7 +17,7 @@ class PreviewCell: UITableViewCell {
     @IBOutlet weak var preview5: UIImageViewCached!
     
     
-    func updateInfo(screenshotUrls : [String] ) {
+    private func updateInfo(screenshotUrls : [String] ) {
         
         let previews = [preview1,preview2,preview3,preview4,preview5]
         

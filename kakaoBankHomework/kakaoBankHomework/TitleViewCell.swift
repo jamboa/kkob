@@ -22,7 +22,7 @@ class TitleViewCell: UITableViewCell {
     
     var urlSessionDataTask : URLSessionDataTask?
 
-    func updateInfo(titleIamgeUrl : String,
+    private func updateInfo(titleIamgeUrl : String,
                     trackName : String,
                     trackContentRating: String,
                     contentAdvisoryRating: String,

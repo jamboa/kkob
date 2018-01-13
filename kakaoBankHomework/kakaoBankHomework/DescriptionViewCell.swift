@@ -11,7 +11,7 @@ import UIKit
 class DescriptionViewCell: UITableViewCell {
     @IBOutlet weak var desciptionLabel: UILabel!
     
-    func updateInfo(description : String) {
+    private func updateInfo(description : String) {
         self.desciptionLabel.setStringWithLineSpacing(string: description, lineSpace: 12)
     }
     

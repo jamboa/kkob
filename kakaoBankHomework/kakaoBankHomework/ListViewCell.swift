@@ -19,14 +19,6 @@ class ListViewCell: UITableViewCell {
     @IBOutlet weak var screenShotImage3: UIImageViewCached!
 //    var dataTask : [URLSessionDataTask?]
     
-    func updateInfo(iconImageUrl : String,
-                    title : String,
-                    subTitle: String,
-                    idString : String) {
-        
-
-
-    }
     
     func updateInfo(bankInfo : BankSimpleInfo) {
         
