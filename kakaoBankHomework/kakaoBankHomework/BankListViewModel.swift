@@ -30,7 +30,7 @@ struct BankSimpleInfo {
         self.idString = idString
     }
     
-    func updateScreenShots(completion : @escaping ([String])->Void) {
+    func updateScreenShots(completion : @escaping (Int,Data)->Void) {
         
         let urlString =  "https://itunes.apple.com/lookup?id=\(self.idString)&country=kr"
         
@@ -40,8 +40,17 @@ struct BankSimpleInfo {
             let arrayResult = appData["results"].arrayValue
             let data = arrayResult[0]
             let screenshotUrls = data["screenshotUrls"].arrayValue.map { $0.stringValue}
-            
-            completion(screenshotUrls)
+
+            for (index,screenshotUrl) in screenshotUrls.enumerated() {
+                if index < 3 {
+                    _ = Bernoice.shared.getByRemote(url: screenshotUrl,cached: true){ data in
+                        DispatchQueue.main.async() {
+                            completion(index,data)
+                        }
+                    }
+                }
+            }
+
         })
         
     }

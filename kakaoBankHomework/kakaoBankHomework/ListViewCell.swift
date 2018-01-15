@@ -27,12 +27,9 @@ class ListViewCell: UITableViewCell {
         titleLabel.text = bankInfo.title
         subTitleLabel.text = bankInfo.subTitle
         
-        bankInfo.updateScreenShots {[weak self](screenshotUrls ) in
-            let screenshots = [self?.screenShotImage,self?.screenShotImage2,self?.screenShotImage3]
-            
-            for (screenshot,screenshotUrl) in zip(screenshots,screenshotUrls) {
-                screenshot?.applyRounded().downloadImage(url: screenshotUrl)
-            }
+        let screenshots = [screenShotImage,screenShotImage2,screenShotImage3]
+        bankInfo.updateScreenShots {(index,data ) in
+            screenshots[index]?.applyRounded().image = UIImage(data: data)
         }
     }
     

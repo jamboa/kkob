@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class BankListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class BankListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITableViewDataSourcePrefetching {
     
     
     @IBOutlet weak var bankAppsTable: UITableView!
@@ -21,22 +21,15 @@ class BankListViewController: UIViewController, UITableViewDelegate, UITableView
         return bankListViewModel.numberOfBank()
     }
     
-    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "listViewCell", for: indexPath) as! ListViewCell
-        cell.cancelUpdating()
-    }
+//    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "listViewCell", for: indexPath) as! ListViewCell
+//        cell.cancelUpdating()
+//    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "listViewCell", for: indexPath) as! ListViewCell
         cell.updateInfo(bankInfo : bankListViewModel.getBankInfo(index: indexPath.row))
-        
-        if indexPath.row > Int((Double(bankListViewModel.numberOfBank()) * 0.8)) {
-            bankListViewModel.getList(from : bankListViewModel.numberOfBank(),count : 30) {[weak self] in
-                self?.bankAppsTable.reloadData()
-            }
-            
-        }
         
         return cell
     }
@@ -59,6 +52,16 @@ class BankListViewController: UIViewController, UITableViewDelegate, UITableView
         performSegue(withIdentifier: "toBankAppDetail", sender: data["id"]["attributes"]["im:id"].stringValue)
     }
     
+    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
+        for indexPath in indexPaths {
+            bankListViewModel.getBankInfo(index: indexPath.row).updateScreenShots(completion: {(_,_) in})
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cancelPrefetchingForRowsAt indexPaths: [IndexPath]) {
+        print("prefetching later")
+    }
+    
 
     
     override func viewDidLoad() {
@@ -67,8 +70,9 @@ class BankListViewController: UIViewController, UITableViewDelegate, UITableView
         
         bankAppsTable.dataSource = self
         bankAppsTable.delegate = self
+        bankAppsTable.prefetchDataSource = self
         
-        bankListViewModel.getList(from : 0, count : 30) {[weak self] in
+        bankListViewModel.getList(from : 0, count : 200) {[weak self] in
             self?.bankAppsTable.reloadData()
         }
 
